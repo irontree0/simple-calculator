@@ -7,15 +7,11 @@ public class _Main {
     public static void main(String[] args) {
         int num1 = 6;
         int num2 = 3;
-
-        int sum = Calculator.add(num1, num2);
-        ResultWriterService.printResult(num1, num2, sum, "+");
-
-        int difference = Calculator.subtract(num1, num2);
-        ResultWriterService.printResult(num1, num2, difference, "-");
-
-        int product = Calculator.multiply(num1, num2);
-        ResultWriterService.printResult(num1, num2, product, "*");
-
+        int result = Calculator.calcSum(num1, num2);
+        ResultWriterService.printResult(num1, num2, result, "+");
+        result = Calculator.subtract(num1, num2);
+        ResultWriterService.printResult(num1, num2, result, "-");
+        result = Calculator.multiply(num1, num2);
+        ResultWriterService.printResult(num1, num2, result, "*");
     }
 }
